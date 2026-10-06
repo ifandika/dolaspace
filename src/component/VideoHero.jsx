@@ -1,4 +1,4 @@
-import videoDolalak from '../assets/video/video-dolalak.mp4'
+// import videoDolalak from '../assets/video/video-dolalak.mp4'
 
 
 /**
