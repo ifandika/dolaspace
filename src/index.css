@@ -1,0 +1,42 @@
+/*==================================
+Import Area
+=====================================*/
+@import "tailwindcss";
+
+
+/*==================================
+Import Font
+=====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+
+/*==================================
+Tailwind CSS Theme Custom (v4)
+=====================================*/
+@theme {
+  --color-ink: #1A1A1A;
+  --color-ink-dark: #0F0F0F;
+  --color-cream: #FDFBF6;
+  --color-gold: #E8B84B;
+  --color-gold-dark: #D4A017;
+  
+  --font-roboto-flex: "Roboto Flex", sans-serif;
+  --font-chewy: "Chewy", cursive;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+
+/*==================================
+Base Style
+=====================================*/
+body {
+  background-color: white;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
