@@ -12,9 +12,9 @@ const VideoHero = () => {
 
 
       {/* Play video */}
-      <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
+      {/* <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
         <source src={videoDolalak} type="video/mp4" />
-      </video>
+      </video> */}
 
 
       {/* Overlay for dark color */}
