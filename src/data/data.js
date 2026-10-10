@@ -18,61 +18,66 @@ import img6 from "../assets/documentation/img-6.jpg";
 import img7 from "../assets/documentation/img-7.jpg";
 import img8 from "../assets/documentation/img-8.jpg";
 
-
 /**
  * This contains data of component or attributes of dolalak dance
  */
 export const components = [
   {
     image: imageComponentTopi,
-    title: "Dolalak Hat / Blankon",
+    title: "Topi Dolalak / Blangkon",
     description:
-      "The name of the Dolalak dance costume component is the Blangkon or Dolalak Hat.",
+      "Nama komponen kostum Tari Dolalak ini adalah Blangkon atau Topi Dolalak.",
   },
+
   {
     image: imageComponentSumping,
     title: "Sumping",
     description:
-      "This component is integrated with the Dolalak hat or Blankon, and its color tends towards yellow.",
+      "Komponen ini menyatu dengan topi Dolalak atau Blangkon, dan warnanya cenderung berwarna kuning.",
   },
+
   {
     image: imageComponentEmpaulet,
-    title: "Empaulet",
+    title: "Epolet",
     description:
-      "This attribute is part of the imitation of a Dutch military uniform and consists of an ornamental piece worn on the shoulder.",
+      "Atribut ini merupakan bagian dari kostum yang meniru seragam militer Belanda dan berupa hiasan yang dikenakan pada bagian bahu.",
   },
+
   {
     image: imageComponentBaju,
-    title: "Dolalak Costume",
+    title: "Baju Dolalak",
     description:
-      "The Dolalak shirt is a long-sleeved black top that serves as a distinctive feature of the dancers' costumes, modeled after 19th-century Dutch officer uniforms. It is typically adorned with gold-colored ornamentation on the chest and back and features ceremonial rank insignia on the shoulders.",
+      "Baju Dolalak merupakan atasan berwarna hitam dengan lengan panjang yang menjadi ciri khas kostum penari. Baju ini terinspirasi dari seragam perwira Belanda pada abad ke-19. Biasanya dihiasi ornamen berwarna emas pada bagian dada dan punggung serta dilengkapi dengan tanda pangkat seremonial pada bagian bahu.",
   },
+
   {
     image: imageComponentPinggang,
-    title: "Belt",
+    title: "Ikat Pinggang",
     description:
-      "Is a belt worn around the dancer's waist. In some descriptions, it is cited as an accessory that complements the Dolalak dancer's attire, serving to secure the trousers and enhance the neatness of the costume.",
+      "Ikat pinggang dikenakan di sekitar pinggang penari. Aksesori ini berfungsi untuk melengkapi pakaian penari Dolalak, membantu menjaga celana tetap pada tempatnya, serta memberikan tampilan kostum yang lebih rapi.",
   },
+
   {
     image: imageComponentSelendang,
-    title: "Shawl",
+    title: "Selendang",
     description:
-      "The Shawl—or, more commonly, the sampur—is a sash tied around the waist, typically on the dancer's left side. It serves as a vital element of the dance, functioning as a prop for movements and symbolizing Javanese cultural influence within the Dolalak costume. While often bright yellow, red versions also exist.",
+      "Selendang atau yang lebih umum disebut sampur merupakan kain yang diikatkan di bagian pinggang, biasanya pada sisi kiri penari. Selendang menjadi salah satu elemen penting dalam tarian karena digunakan sebagai properti dalam melakukan berbagai gerakan dan melambangkan pengaruh budaya Jawa dalam kostum Dolalak. Warnanya sering kali kuning cerah, tetapi terdapat pula selendang berwarna merah.",
   },
+
   {
     image: imageComponentCelana,
-    title: "Trousers",
+    title: "Celana",
     description:
-      "Dolalak dancers wear black shorts. The length varies—some reaching above the knee and others below—with patterns that match those on the tops. Historically, above-the-knee shorts were worn by male dancers but are now frequently worn by female dancers, whereas below-the-knee shorts are used to comply with standards of modesty.",
+      "Penari Dolalak menggunakan celana berwarna hitam. Panjangnya bervariasi, ada yang mencapai di atas lutut dan ada pula yang berada di bawah lutut, dengan pola yang disesuaikan dengan motif pada bagian atasan. Secara historis, celana di atas lutut digunakan oleh penari laki-laki, tetapi kini sering digunakan oleh penari perempuan, sedangkan celana di bawah lutut digunakan untuk menyesuaikan dengan standar kesopanan.",
   },
+
   {
     image: imageComponentKaosKaki,
-    title: "Dolalak Dance Socks",
+    title: "Kaos Kaki Tari Dolalak",
     description:
-      "The final component is the Dolalak dance socks, these are typically red and reach mid-calf.",
+      "Komponen terakhir adalah kaos kaki Tari Dolalak. Kaos kaki ini biasanya berwarna merah dan memiliki panjang hingga pertengahan betis.",
   },
 ];
-
 
 /**
  * This data contains link to youtube video tutorial
@@ -119,12 +124,10 @@ export const tutorials = [
   },
 ];
 
-
 /**
  * This contains variable of image
  */
 export const gallery = [img1, img2, img3, img4, img5, img6, img7, img8];
-
 
 /**
  * Contains testimonial data from users
@@ -132,61 +135,56 @@ export const gallery = [img1, img2, img3, img4, img5, img6, img7, img8];
 export const testimonials = [
   {
     name: "Siti Nurhaliza",
-    email: "siti.nurhaliza@yahoo.com",
+    email: "siti.nurhaliza@gmail.com",
     message:
-      "Saya baru tahu kalau Tari Dolalak punya sejarah panjang dari era kolonial Belanda. Terima kasih DolaSpace sudah melestarikan budaya kita!",
+      "Saya baru tahu kalau Tari Dolalak memiliki sejarah panjang sejak era kolonial Belanda. Terima kasih DolaSpace sudah membantu melestarikan budaya kita!",
   },
   {
-    name: "Ahmed Al-Farsi",
-    email: "ahmed.alfarsi@gmail.com",
+    name: "Ahmad Fauzan",
+    email: "ahmad.fauzan@gmail.com",
     message:
-      "موقع رائع للتعرف على الثقافة الإندونيسية. رقصة دولالاك جميلة جدًا وتستحق المشاهدة!",
-    // "Situs yang luar biasa untuk mengenal budaya Indonesia. Tari Dolalak sangat indah dan layak ditonton!"
+      "Situs yang sangat menarik untuk mengenal budaya Indonesia. Tari Dolalak sangat indah dan memiliki nilai budaya yang luar biasa!",
   },
   {
-    name: "Fatima Al-Zahra",
-    email: "fatima.alzahra@outlook.com",
+    name: "Fatimah Azzahra",
+    email: "fatimah.azzahra@gmail.com",
     message:
-      "أحببت تصميم الموقع وسهولة استخدامه. شكرًا لكم على مشاركة هذا التراث الثقافي الغني.",
-    // "Saya suka desain website dan kemudahan penggunaannya. Terima kasih telah berbagi warisan budaya yang kaya ini."
+      "Saya sangat menyukai desain website dan kemudahan penggunaannya. Terima kasih telah memperkenalkan dan berbagi informasi tentang warisan budaya yang kaya ini.",
   },
   {
-    name: "Yuki Tanaka",
-    email: "yuki.tanaka@gmail.com",
+    name: "Yuki Pratama",
+    email: "yuki.pratama@gmail.com",
     message:
-      "ドララック舞踊の歴史がとても詳しく書かれていて勉強になりました。日本の文化と似ているところもあって面白いです！",
-    // "Sejarah Tari Dolalak ditulis dengan sangat detail dan saya banyak belajar. Ada kemiripan dengan budaya Jepang juga, menarik!"
+      "Sejarah Tari Dolalak ditulis dengan sangat detail dan saya mendapatkan banyak pengetahuan baru. Sangat menarik untuk dipelajari!",
   },
   {
-    name: "Michael Johnson",
-    email: "michael.johnson@gmail.com",
+    name: "Michael Wijaya",
+    email: "michael.wijaya@gmail.com",
     message:
-      "This website is a fantastic resource for learning about Indonesian culture. The Dolalak dance history section is very well-researched!",
+      "Website ini merupakan media yang sangat bagus untuk mempelajari budaya Indonesia. Bagian sejarah Tari Dolalak juga sangat informatif dan mudah dipahami!",
   },
   {
-    name: "David Williams",
-    email: "david.williams@gmail.com",
+    name: "Dimas Saputra",
+    email: "dimas.saputra@gmail.com",
     message:
-      "The video, gallery, and interactive chart make the whole experience immersive. Great work, DolaSpace team!",
+      "Video, galeri, dan grafik interaktif membuat pengalaman belajar menjadi lebih menarik. Kerja yang sangat bagus, tim DolaSpace!",
   },
   {
-    name: "Anastasia Volkova",
-    email: "anastasia.volkova@yandex.ru",
+    name: "Anastasia Putri",
+    email: "anastasia.putri@gmail.com",
     message:
-      "Дизайн сайта красивый и современный. Чат-бот очень удобный. Рекомендую всем, кто интересуется культурой!",
-    // "Desain website-nya cantik dan modern. Chatbot-nya sangat nyaman. Saya rekomendasikan untuk siapa saja yang tertarik budaya!"
+      "Desain website-nya sangat cantik dan modern. Chatbot-nya juga sangat membantu. Saya merekomendasikannya untuk siapa saja yang tertarik dengan budaya Indonesia!",
   },
   {
     name: "Kim Min-jun",
-    email: "minjun.kim@naver.com",
+    email: "kim.minjun@gmail.com",
     message:
-      "돌랄락 춤의 역사와 구성 요소를 자세히 알 수 있어서 좋았습니다. 인도네시아 문화에 대한 이해가 깊어졌어요!",
-    // "Senang bisa mengetahui sejarah dan komponen Tari Dolalak secara detail. Pemahaman saya tentang budaya Indonesia jadi lebih dalam!"
+      "Senang bisa mengetahui sejarah dan komponen Tari Dolalak secara lebih detail. Pemahaman saya tentang budaya Indonesia menjadi lebih luas!",
   },
   {
-    name: "James Smith",
-    email: "james.smith@bbc.co.uk",
+    name: "Joko Santoso",
+    email: "joko.santoso@gmail.com",
     message:
-      "A beautifully designed platform that truly honours Indonesian heritage. The chatbot is a brilliant touch!",
+      "Platform yang dirancang dengan sangat baik untuk mengenal dan mempelajari warisan budaya Indonesia. Fitur chatbot-nya juga sangat menarik dan bermanfaat!",
   },
 ];

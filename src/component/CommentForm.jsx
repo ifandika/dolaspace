@@ -45,14 +45,14 @@ const CommentForm = ({ onSubmit }) => {
 
       {/* Title of form */}
       <h3 className="text-2xl font-serif font-bold text-ink mb-6">
-        Leave a Commentar
+        Berikan Komentar
       </h3>
 
 
       {/* Condiiton if the commend has ben send */}
       {submitted && (
         <div className="mb-4 p-3 bg-green-50 border-l-4 border-green-500 text-green-800 text-sm rounded">
-          Thank you! Your comment has been successfully sent.
+          Terima kasih! Komentar Anda telah berhasil dikirim.
         </div>
       )}
 
@@ -63,7 +63,7 @@ const CommentForm = ({ onSubmit }) => {
           htmlFor="name"
           className="block text-sm font-semibold text-ink mb-2"
         >
-          Name <span className="text-red-500">*</span>
+          Nama <span className="text-red-500">*</span>
         </label>
         <input
           type="text"
@@ -103,7 +103,7 @@ const CommentForm = ({ onSubmit }) => {
           htmlFor="message"
           className="block text-sm font-semibold text-ink mb-2"
         >
-          Commentar <span className="text-red-500">*</span>
+          Komentar <span className="text-red-500">*</span>
         </label>
         <textarea
           id="message"
@@ -122,7 +122,7 @@ const CommentForm = ({ onSubmit }) => {
         type="submit"
         className="w-full md:w-auto px-8 py-3 bg-gold text-ink font-bold rounded-full hover:bg-gold-dark transition shadow-md hover:shadow-lg disabled:opacity-50"
       >
-        Send Commentar
+        Kirim Komentar
       </button>
     </form>
   );

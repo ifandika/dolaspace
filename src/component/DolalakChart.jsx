@@ -18,8 +18,8 @@ export const data = [
  * Contains data for percentage of interest dolalak dance in purworejo.
  */
 export const options = {
-  title: "Percentage of Interest",
-  pieSliceText: "percentage",
+  title: "Persentase Peminatan",
+  pieSliceText: "Persentase",
   pieHole: 0.4,
   colors: ["#E8B84B", "#D4A017", "#8B6914", "#5C4A0F", "#1A1A1A"],
   legend: { position: "bottom" },

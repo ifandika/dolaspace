@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
 
         <p className="text-sm text-amber-200/80">
-          © 2026 DolaSpace. All rights reserved.
+          © 2026 DolaSpace. Hak cipta dilindungi undang-undang.
         </p>
         
       </div>

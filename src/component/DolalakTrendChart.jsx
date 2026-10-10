@@ -5,7 +5,7 @@ import { Chart } from "react-google-charts";
  * Contains data interest people in year.
  */
 export const data = [
-  ["Year", "Number of interested people", "Number of active dancers"],
+  ["Tahun", "Jumlah Peminata Orang", "Jumlah Penari Aktif"],
   ["2020", 320, 180],
   ["2021", 410, 220],
   ["2022", 385, 210],
@@ -20,8 +20,8 @@ export const data = [
  * Contains configuration for chart of increase interest in dolalak dance.
  */
 export const options = {
-  title: "Rising Interest in Dolalak Dance Culture (2020-2026)",
-  subtitle: "Data on enthusiasts and active dancers in Purworejo Regency",
+  title: "Peminatan Minat terhadap Budaya Tari Dolalak (2020-2026)",
+  subtitle: "Data mengenai peminat dan penari aktif di Kabupaten Purworejo",
   curveType: "function",
   lineWidth: 4,
   pointSize: 8,
@@ -30,12 +30,12 @@ export const options = {
   backgroundColor: "transparent",
   chartArea: { width: "85%", height: "70%" },
   hAxis: {
-    title: "Year",
+    title: "Tahun",
     titleTextStyle: { color: "#1A1A1A", italic: false, bold: true },
     textStyle: { color: "#1A1A1A" },
   },
   vAxis: {
-    title: "Total (people)",
+    title: "Total (orang)",
     minValue: 0,
     titleTextStyle: { color: "#1A1A1A", italic: false, bold: true },
     textStyle: { color: "#1A1A1A" },

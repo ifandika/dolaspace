@@ -22,7 +22,7 @@ const ChatbotWidget = () => {
         to="/chatbot"
         className="mt-8 px-10 py-4 bg-ink text-gold font-serif font-bold text-lg rounded-full hover:bg-gold hover:text-ink transition-all shadow-lg hover:shadow-xl hover:scale-105"
       >
-        Let's Chat
+        Mari Mengobrol
       </Link>
 
     </div>

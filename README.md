@@ -2,181 +2,250 @@
 
 ---
 
-## Introduction
+## Pendahuluan
 
-**DolaSpace** is an interactive learning platform dedicated to preserving and promoting the cultural heritage of **Tari Dolalak** — a traditional dance originating from Purworejo, Central Java, Indonesia.
+**DolaSpace** adalah platform pembelajaran interaktif yang didedikasikan untuk melestarikan dan mempromosikan warisan budaya **Tari Dolalak** — sebuah tarian tradisional yang berasal dari Purworejo, Jawa Tengah, Indonesia.
 
-The application is developed as a **web-based platform**, meaning it can be accessed from any device, anytime, and anywhere. The interface is fully **responsive**, adapting seamlessly to desktop and mobile screens.
+Aplikasi ini dikembangkan sebagai **platform berbasis web**, yang berarti dapat diakses dari perangkat apa pun, kapan saja, dan di mana saja. Antarmukanya sepenuhnya **responsif**, sehingga dapat menyesuaikan dengan baik pada layar desktop maupun perangkat seluler.
 
-This documentation provides a technical overview of the project: its architecture, tech stack, folder structure, integrations, and development workflow.
+Dokumentasi ini memberikan gambaran teknis mengenai proyek: arsitektur, teknologi yang digunakan, struktur folder, integrasi, dan alur kerja pengembangan.
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology | Notes |
+| Layer | Teknologi | Keterangan |
 |---|---|---|
-| **Build Tool** | [Vite](https://vite.dev/guide/) | Fast build & dev server |
-| **UI Library** | [React.js v19](https://react.dev/reference/react) | Component-based frontend |
-| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/docs/installation/using-vite) | Utility-first CSS via Vite plugin |
-| **Routing** | [React Router](https://reactrouter.com/home) | Client-side navigation |
-| **Charts** | [Google Charts](https://developers.google.com/chart) | Data visualization |
-| **Language** | JavaScript (not TypeScript) | Chosen for simplicity and faster iteration |
-| **Database** | None | Data stored statically (see Storage section) |
+| **Build Tool** | [Vite](https://vite.dev/guide/) | Build tool dan server pengembangan yang cepat |
+| **UI Library** | [React.js v19](https://react.dev/reference/react) | Frontend berbasis komponen |
+| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/docs/installation/using-vite) | CSS utility-first melalui plugin Vite |
+| **Routing** | [React Router](https://reactrouter.com/home) | Navigasi sisi klien |
+| **Charts** | [Google Charts](https://developers.google.com/chart) | Visualisasi data |
+| **Language** | JavaScript (bukan TypeScript) | Dipilih untuk kesederhanaan dan iterasi yang lebih cepat |
+| **Database** | Tidak ada | Data disimpan secara statis (lihat bagian Penyimpanan) |
 
 ---
 
-## How to Develop
-Follow these steps to set up the project locally:
+## Cara Mengembangkan
 
-### 1. Clone or download the project
+Ikuti langkah-langkah berikut untuk menyiapkan proyek secara lokal:
+
+### 1. Clone atau unduh proyek
+
 ```bash
 $ git clone <repository-url>
+
 $ cd dolaspace
 ```
 
-### 2. Open with a code editor
-Recommended: Visual Studio Code.
+### 2. Buka dengan code editor
 
-### 3. Install dependencies
+Direkomendasikan: Visual Studio Code.
+
+### 3. Instal dependensi
+
 ```bash
 $ npm install
 
-# Install the additional libraries used in this project:
+# Instal library tambahan yang digunakan dalam proyek ini:
+
 $ npm install react-router-dom
+
 $ npm install tailwindcss @tailwindcss/vite
+
 $ npm install react-google-charts
 ```
 
-### 4. Run the development server
+### 4. Jalankan development server
+
 ```bash
 $ npx vite
-# or
+
+# atau
+
 $ npm run dev
 ```
 
-### 5. Open in your browser
+### 5. Buka di browser
+
 ```text
-http://localhost:5173/
+[http://localhost:5173/](http://localhost:5173/)
 ```
 
 ---
 
-## Storage
-DolaSpace does not use a database (no MySQL, PostgreSQL, MongoDB, etc.).
+## Penyimpanan
 
-All data is stored in static files inside src/data/. When a user submits new data (e.g., a comment), it is held in React state (or a static file) rather than persisted to a database.
+DolaSpace tidak menggunakan database (seperti MySQL, PostgreSQL, MongoDB, dan sebagainya).
 
-> Limitation: Any new input will be lost on page refresh, since it is not stored persistently. This is intentional for the current version — a backend may be added in future iterations.
+Semua data disimpan dalam file statis di dalam `src/data/`. Ketika pengguna mengirimkan data baru (misalnya komentar), data tersebut disimpan di React state (atau file statis) dan tidak disimpan secara permanen ke database.
+
+> Keterbatasan: Setiap input baru akan hilang ketika halaman dimuat ulang, karena tidak disimpan secara permanen. Hal ini memang disengaja untuk versi saat ini — backend dapat ditambahkan pada pengembangan berikutnya.
 
 ---
 
-## Project Structure
-Below is the folder and file structure of DolaSpace, with a brief explanation for each item.
+## Struktur Proyek
+
+Berikut adalah struktur folder dan file DolaSpace, beserta penjelasan singkat untuk setiap item.
 
 ```text
 dolaspace/
-├── node_modules/                # Installed npm packages (React, Vite, etc.)
-├── public/                      # Publicly served static files
-├── src/                         # Main source code
-│   ├── assets/                  # All project resources
-│   │   ├── documentation/       # Photos documenting Tari Dolalak
-│   │   ├── dolalak/             # Images of Tari Dolalak costume components
-│   │   └── video/               # Overview video of Tari Dolalak
-│   │                            # (source: "Romansa Purworejo" on YouTube)
-│   ├── components/              # Reusable JSX components
+
+├── node_modules/                 # Paket npm yang telah diinstal (React, Vite, dll.)
+
+├── public/                       # File statis yang dapat diakses secara publik
+
+├── src/                          # Source code utama
+
+│   ├── assets/                   # Seluruh sumber daya proyek
+
+│   │   ├── documentation/        # Foto-foto dokumentasi Tari Dolalak
+
+│   │   ├── dolalak/              # Gambar komponen kostum Tari Dolalak
+
+│   │   └── video/                # Video pengenalan Tari Dolalak
+
+│   │                               # (sumber: "Romansa Purworejo" di YouTube)
+
+│   ├── components/               # Komponen JSX yang dapat digunakan kembali
+
 │   │   ├── Navbar.jsx
+
 │   │   ├── Footer.jsx
+
 │   │   ├── VideoHero.jsx
+
 │   │   ├── GalleryGrid.jsx
+
 │   │   └── ...
-│   ├── data/                    # Static data files (.js)
-│   ├── hooks/                   # Custom React hooks (e.g., for comments)
-│   ├── pages/                   # Page-level components (routed views)
+
+│   ├── data/                     # File data statis (.js)
+
+│   ├── hooks/                    # Custom React hooks (misalnya untuk komentar)
+
+│   ├── pages/                    # Komponen tingkat halaman (tampilan yang diatur oleh route)
+
 │   │   ├── Home.jsx
+
 │   │   ├── Chatbot.jsx
+
 │   │   ├── Dolalak.jsx
+
 │   │   ├── NotFound.jsx
+
 │   │   └── History.jsx
-│   ├── App.jsx                  # App entry — defines all routes
-│   ├── index.css                # Global styles + Tailwind directives
-│   └── main.jsx                 # React root — mounts App to index.html
-├── .env                         # Environment variables (e.g., Gemini API key)
-├── .gitignore                   # Files/folders excluded from Git
-├── .oxlintrc.json               # Linter configuration
-├── index.html                   # Entry HTML file served to users
-├── package-lock.json            # Locked dependency versions
-├── package.json                 # Project metadata & scripts
-├── README.md                    # This documentation
-└── vite.config.js               # Vite configuration
+
+│   ├── App.jsx                   # Entry aplikasi — mendefinisikan semua route
+
+│   ├── index.css                 # Style global + direktif Tailwind
+
+│   └── main.jsx                  # React root — memasang App ke index.html
+
+├── .env                          # Variabel lingkungan (misalnya Gemini API key)
+
+├── .gitignore                    # File/folder yang dikecualikan dari Git
+
+├── .oxlintrc.json                # Konfigurasi linter
+
+├── index.html                    # File HTML utama yang disajikan kepada pengguna
+
+├── package-lock.json             # Versi dependensi yang dikunci
+
+├── package.json                  # Metadata proyek & script
+
+├── README.md                     # Dokumentasi ini
+
+└── vite.config.js                # Konfigurasi Vite
 ```
 
 ---
 
-## SDLC — Waterfall Model
-DolaSpace was developed using the Waterfall methodology — a linear, sequential approach where each phase must be completed before moving to the next.
+## SDLC — Model Waterfall
 
-###	Phase	Description
-| No | Phase | Description |
+DolaSpace dikembangkan menggunakan metodologi Waterfall — pendekatan linear dan berurutan di mana setiap tahap harus diselesaikan sebelum melanjutkan ke tahap berikutnya.
+
+### Deskripsi Tahap
+
+| No | Tahap | Deskripsi |
 |---|---|---|
-| 1 | Requirements Analysis | Gather all needs: what features must exist (gallery, chatbot, chart, history page). Determine target users (students, cultural enthusiasts). |
-| 2 | System Design | Design the UI/UX, sitemap, data flow, and component hierarchy. Choose the tech stack (React + Vite + Tailwind v4). |
-| 3 | Implementation | Write the actual code: build components, set up routing, integrate Google Charts, connect to Gemini API, and embed Google Calendar. |
-| 4 | Testing | Verify every feature works: routing, responsiveness, chatbot replies, chart rendering, and form submissions. Fix bugs found. |
-| 5 | Deployment | Publish to a hosting platform (Vercel/Netlify). Set environment variables and ensure the production build runs correctly. |
-| 6 | Maintenance | Data stored statically (see Storage section) | Ongoing: update content, fix bugs, add new features, and monitor performance. |
+| 1 | Analisis Kebutuhan | Mengumpulkan semua kebutuhan: fitur apa saja yang harus tersedia (galeri, chatbot, chart, halaman sejarah). Menentukan target pengguna (pelajar, penggemar budaya). |
+| 2 | Perancangan Sistem | Merancang UI/UX, sitemap, alur data, dan hierarki komponen. Memilih teknologi yang digunakan (React + Vite + Tailwind v4). |
+| 3 | Implementasi | Menulis kode sebenarnya: membangun komponen, mengatur routing, mengintegrasikan Google Charts, menghubungkan Gemini API, dan menyematkan Google Calendar. |
+| 4 | Pengujian | Memastikan setiap fitur berjalan dengan baik: routing, responsivitas, respons chatbot, rendering chart, dan pengiriman formulir. Memperbaiki bug yang ditemukan. |
+| 5 | Deployment | Mempublikasikan aplikasi ke platform hosting (Vercel/Netlify). Mengatur environment variables dan memastikan production build berjalan dengan baik. |
+| 6 | Pemeliharaan | Data disimpan secara statis (lihat bagian Penyimpanan) | Berkelanjutan: memperbarui konten, memperbaiki bug, menambahkan fitur baru, dan memantau performa. |
 
 ---
 
-## Routing Pages
-DolaSpace uses React Router for client-side navigation.
+## Routing Halaman
 
-- http://localhost:5173/	=> Homepage: landing page with hero video, gallery, chart, and comment section
-- http://localhost:5173/about-us	=> About Us: information about the DolaSpace platform
-- http://localhost:5173/history	=> History: detailed history of Tari Dolalak
-- http://localhost:5173/dolalak	=> Components: costume components and attributes of Tari Dolalak
-- http://localhost:5173/chatbot	=> Chatbot: interactive AI assistant powered by Gemini
+DolaSpace menggunakan React Router untuk navigasi sisi klien.
+
+- [http://localhost:5173/](http://localhost:5173/) => Beranda: halaman utama dengan video hero, galeri, chart, dan bagian komentar
+
+- [http://localhost:5173/about-us](http://localhost:5173/about-us) => Tentang Kami: informasi mengenai platform DolaSpace
+
+- [http://localhost:5173/history](http://localhost:5173/history) => Sejarah: sejarah lengkap Tari Dolalak
+
+- [http://localhost:5173/dolalak](http://localhost:5173/dolalak) => Komponen: komponen kostum dan atribut Tari Dolalak
+
+- [http://localhost:5173/chatbot](http://localhost:5173/chatbot) => Chatbot: asisten AI interaktif yang didukung oleh Gemini
+
+- [http://localhost:5173/abc](http://localhost:5173/abc) => Tidak Ditemukan: pengujian halaman not-found
 
 ---
 
-## Integrations
-DolaSpace integrates with four external services.
+## Integrasi
+
+DolaSpace terintegrasi dengan empat layanan eksternal.
+
 ### 1. Google Calendar
-Used in the Events section of the homepage. Displays a live embedded calendar showing upcoming Tari Dolalak events in Purworejo.
+
+Digunakan pada bagian Events di halaman beranda. Menampilkan kalender yang disematkan secara langsung dan menampilkan acara Tari Dolalak yang akan datang di Purworejo.
 
 ### 2. Google Gemini AI - gemini-3-flash-preview
-Powers the Chatbot page. Users can ask questions about Tari Dolalak in natural language, and the AI responds in a friendly, culturally-aware tone.
+
+Digunakan untuk mendukung halaman Chatbot. Pengguna dapat mengajukan pertanyaan mengenai Tari Dolalak menggunakan bahasa alami, dan AI memberikan respons dengan gaya yang ramah serta memperhatikan konteks budaya.
 
 ### 3. Google Charts
-Used in the Data section. Renders interactive charts (pie and line) that visualize public interest in Tari Dolalak across regions and years.
+
+Digunakan pada bagian Data. Menampilkan chart interaktif (pie dan line) yang memvisualisasikan minat masyarakat terhadap Tari Dolalak berdasarkan wilayah dan tahun.
 
 ### 4. WhatsApp
-Integrated into the Help / Support section. Users can reach the admin directly via WhatsApp for assistance.
+
+Diintegrasikan pada bagian Help / Support. Pengguna dapat menghubungi admin secara langsung melalui WhatsApp untuk mendapatkan bantuan.
 
 ---
 
-## Compatibility
+## Kompatibilitas
 
-### Devices
-| Device | Supported |
-|---|---|
-| Desktop / Web | Yes |
-| Android / iOS / Tablet (browser) | Yes |
-| Smart TV (browser) | Yes |
+### Perangkat
 
-### Browsers
-| Browser | Supported |
+| Perangkat | Didukung |
 |---|---|
-| Google Chrome | Yes |
-| Microsoft Edge | Yes |
-| Safari | Yes |
-| Mozilla Firefox | Yes |
+| Desktop / Web | Ya |
+| Android / iOS / Tablet (browser) | Ya |
+| Smart TV (browser) | Ya |
+
+### Browser
+
+| Browser | Didukung |
+|---|---|
+| Google Chrome | Ya |
+| Microsoft Edge | Ya |
+| Safari | Ya |
+| Mozilla Firefox | Ya |
 
 ---
 
-## Reference
-[1] https://react.dev/reference/react
-[2] https://tailwindcss.com/docs/installation/using-vite
-[3] https://vite.dev/guide/
-[4] https://developers.google.com/chart
-[5] https://reactrouter.com/home
+## Referensi
+
+[1] [https://react.dev/reference/react](https://react.dev/reference/react)
+
+[2] [https://tailwindcss.com/docs/installation/using-vite](https://tailwindcss.com/docs/installation/using-vite)
+
+[3] [https://vite.dev/guide/](https://vite.dev/guide/)
+
+[4] [https://developers.google.com/chart](https://developers.google.com/chart)
+
+[5] [https://reactrouter.com/home](https://reactrouter.com/home)

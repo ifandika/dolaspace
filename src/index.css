@@ -28,6 +28,21 @@ Tailwind CSS Theme Custom (v4)
   --font-chewy: "Chewy", cursive;
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", system-ui, sans-serif;
+  
+  /* Animation fade up */
+  --animate-fade-up: fadeUp 0.7s ease-out forwards;
+  --animate-fade-up-slow: fadeUp 2.2s ease-out forwards;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(90px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 

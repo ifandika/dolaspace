@@ -46,10 +46,10 @@ const Navbar = () => {
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-2">
-            <NavLink to="/" className={navLinkClass}>Home</NavLink>
-            <NavLink to="/#" className={navLinkClass}>About Us</NavLink>
-            <NavLink to="/#" className={navLinkClass}>History</NavLink>
-            <NavLink to="/#" className={navLinkClass}>Let's chat</NavLink>
+            <NavLink to="/" className={navLinkClass}><b>Beranda</b></NavLink>
+            <NavLink to="/about-us" className={navLinkClass}><b>Tentang Kami</b></NavLink>
+            <NavLink to="/history" className={navLinkClass}><b>Sejarah</b></NavLink>
+            <NavLink to="/chatbot" className={navLinkClass}><b>Cus Ngobrol</b></NavLink>
           </div>
 
 
@@ -73,10 +73,10 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (<div className="md:hidden bg-gold border-t border-amber-600 px-4 pb-4 space-y-1">
-          <NavLink to="/" className={mobileClass} onClick={() => setIsOpen(false)}>Home</NavLink>
-          <NavLink to="/#" className={mobileClass} onClick={() => setIsOpen(false)}>About Us</NavLink>
-          <NavLink to="/#" className={mobileClass} onClick={() => setIsOpen(false)}>History</NavLink>
-          <NavLink to="/#" className={mobileClass} onClick={() => setIsOpen(false)}>Let's chat</NavLink>
+          <NavLink to="/" className={mobileClass} onClick={() => setIsOpen(false)}>Beranda</NavLink>
+          <NavLink to="/about-us" className={mobileClass} onClick={() => setIsOpen(false)}><b>Tentang Kami</b></NavLink>
+          <NavLink to="/history" className={mobileClass} onClick={() => setIsOpen(false)}><b>Sejarah</b></NavLink>
+          <NavLink to="/chatbot" className={mobileClass} onClick={() => setIsOpen(false)}><b>Cus Ngobrol</b></NavLink>
         </div>
       )}
     </nav>

@@ -1,4 +1,4 @@
-// import videoDolalak from '../assets/video/video-dolalak.mp4'
+import videoDolalak from '../assets/video/video-dolalak.mp4'
 
 
 /**
@@ -12,9 +12,9 @@ const VideoHero = () => {
 
 
       {/* Play video */}
-      {/* <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
+      <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
         <source src={videoDolalak} type="video/mp4" />
-      </video> */}
+      </video>
 
 
       {/* Overlay for dark color */}
@@ -30,21 +30,21 @@ const VideoHero = () => {
           </span>
           <br />
           
-          <span className="text-[3rem] font-roboto-flex text-white leading-tight">
-            <span className='text-[#FFB823]'>"DolaSpace" </span>
-            - The Best Platform
+          <span className="text-[3rem] font-roboto-flex text-white">
+            <span className="text-[#FFB823]">"DolaSpace" </span>
+            - Platform Terbaik
             <br />
-            for Exploring the Culture of Dolalak Dance
+            Untuk Eksplorasi Kesenian Tari Dolalak
           </span>
           
           <p className="text-lg md:text-xl text-amber-100 italic font-serif">
-            "Dolalak Purworejo: Ancestral Heritage, Our Pride, the Soul of the Archipelago"
+            "Dolalak Purworejo: Warisan Leluhur, Kebanggaan Kita, Jiwa Nusantara"
           </p>
           <br />
           <br />
 
           <p className="text-[15px] italic text-white">
-            Video from youtube.com/@RomansaPurworejoIndonesia
+            Video dari youtube.com/@RomansaPurworejoIndonesia
           </p>
 
         </div>
