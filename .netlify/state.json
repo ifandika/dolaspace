@@ -1,0 +1,21 @@
+{
+	"dbConnectionString": "postgres://postgres@localhost:61186/postgres",
+	"geolocation": {
+		"data": {
+			"city": "Semarang",
+			"country": {
+				"code": "ID",
+				"name": "Indonesia"
+			},
+			"subdivision": {
+				"code": "JT",
+				"name": "Central Java"
+			},
+			"timezone": "Asia/Jakarta",
+			"latitude": -7.0598,
+			"longitude": 110.4336,
+			"postalCode": "50145"
+		},
+		"timestamp": 1791695524955
+	}
+}
